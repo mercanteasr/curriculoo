@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Currículo Ricardo Mercante</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="topo" class="header">
+        <figure class="moldura-foto">
+            <img src="imagens/img01.jpg" alt="Foto de Ricardo Mercante" class="foto-perfil" width="300" height="300">
+        </figure>
+        <div class="apresentacao">
+            <h1>Ricardo Augusto Scalada Mercante</h1>
+            <p class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="colunas">
+            <section class="contato bloco">
+                <h2>Contato</h2>
+                <ul>
+                    <li><strong>Telefone:</strong> +55 (43) 98805-7058</li>
+                    <li><img src="icones/icon01-email.svg" alt="Ícone de e-mail" width="16" height="16"> <strong>Email:</strong> mercanteasr@gmail.com</li>
+                    <li><img src="icones/icon02-linkedin.svg" alt="Ícone do LinkedIn" width="16" height="16"> <a href="https://www.linkedin.com/in/ricardo-augusto-90a596389/" target="_blank"><strong>LinkedIn</strong></a></li>
+                    <li><img src="icones/icon03-cidade.svg" alt="Ícone de localização" width="16" height="16"> <strong>Cidade:</strong> Cornélio Procópio - PR</li>
+                    <li><a href="https://github.com/mercanteasr" target="_blank"><strong>GitHub</strong></a></li>
+                </ul>
+            </section>
+
+            <section class="habilidades bloco">
+                <h2>Habilidades</h2>
+                <h3>Hard skills</h3>
+                <ul>
+                    <li>Fundamentos da linguagem Java</li>
+                    <li>Fundamentos da linguagem C</li>
+                    <li>Git &amp; GitHub</li>
+                </ul>
+                <h3>Soft skills</h3>
+                <ul>
+                    <li>Trabalho em equipe</li>
+                    <li>Inglês básico</li>
+                    <li>Boa comunicação</li>
+                    <li>Liderança</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="objetivo bloco">
+            <h2>Objetivo profissional</h2>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas em busca de oportunidades na área de desenvolvimento back-end, com interesse em aplicar e aprofundar conhecimentos em Java.</p>
+        </section>
+
+        <section class="resumo bloco">
+            <h2>Resumo</h2>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento back-end e na linguagem Java. Busca aplicar e aprofundar seus conhecimentos técnicos por meio de projetos práticos durante a graduação. Tem facilidade para trabalhar em equipe, boa capacidade de liderança e forte vontade de aprender e evoluir continuamente.</p>
+        </section>
+
+        <div class="colunas">
+            <section class="educacao bloco">
+                <h2>Educação</h2>
+                <h3>Análise e Desenvolvimento de Sistemas (ADS)</h3>
+                <p>Universidade Tecnológica Federal do Paraná — UTFPR</p>
+                <p class="periodo">2026 – 2029</p>
+            </section>
+
+            <section class="ods bloco">
+                <h2>ODS que pretendo contribuir</h2>
+                <figure>
+                    <img src="imagens/img02.png" alt="Ícone do ODS 13 - Ação Contra a Mudança Global do Clima" width="200">
+                    <figcaption>ODS 13 — Ação contra a mudança global do clima</figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <section class="contato-modal">
+            <button class="botao" onclick="document.getElementById('modalContato').showModal()">Enviar informações de contato</button>
+
+            <dialog id="modalContato">
+                <h2>Informações de contato</h2>
+                <form>
+                    <label for="nomeCompleto">Nome completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto">
+
+                    <label for="instagram">Link para o Instagram:</label>
+                    <input type="url" id="instagram" name="instagram">
+
+                    <label for="whatsapp">Número do WhatsApp:</label>
+                    <input type="tel" id="whatsapp" name="whatsapp">
+
+                    <div class="acoes">
+                        <button type="submit" class="botao">Enviar</button>
+                        <button type="button" class="botao botao-secundario" onclick="document.getElementById('modalContato').close()">Fechar</button>
+                    </div>
+                </form>
+            </dialog>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Ricardo Mercante, 2026</p>
+    </footer>
+</body>
+</html>
